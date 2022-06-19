@@ -1,0 +1,97 @@
+@font-face {
+    font-family: BrandonText-Bold;
+    src: url(/fonts/BrandonText-Bold.otf);
+}
+@font-face {
+    font-family: BrandonText-Regular;
+    src: url(/fonts/BrandonText-Regular.otf);
+}
+
+body {
+    background-color: #F4F4F4;
+}
+
+.logo-img {
+    height: 40px;
+}
+
+.navbar {
+    padding-left: 60px;
+    padding-right: 60px;
+}
+
+.strong-text {
+    color: #110343;
+    font-size: 17px;
+    font-family: BrandonText-Bold;
+}
+
+.regular-text {
+    color: #110343;
+    font-size: 17px;
+    font-family: BrandonText-Regular;
+}
+
+.home-text {
+    flex: 1;
+    font-size: 23px;
+}
+
+.content {
+    flex-direction: row;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-self: center;
+    background-color: #110343;
+    margin-top: 9%;
+}
+
+#img-plant-home {
+    margin-left: -17%;
+    height: 280px;
+    margin-top: -10%;
+}
+
+.text-container{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding-left: 8%;
+}
+
+.btn {
+    background-color: #E4715A;
+    font-family: BrandonText-Bold;
+    font-size: 17px;
+    color: white;
+    width: fit-content;
+    border-radius: 12px;
+    padding-left: 17px;
+    padding-right: 17px;
+    margin-top: 10px;
+}
+
+.image-container{
+    flex: 1;
+    align-self: center;
+}
+
+.vector-home {
+    height: 400px;
+}
+
+.form-container {
+    align-self: center;
+    justify-self: center;
+    align-items: center;
+    align-content: center;
+    padding: 0 30% 0 30%;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 8px
+}
