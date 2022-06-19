@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="189px" height="63px" viewBox="0 0 189 63" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Group 7</title>
+    <g id="Home" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Extra-Large" transform="translate(-110.000000, -43.000000)">
+            <g id="Group-7" transform="translate(110.000000, 43.000000)">
+                <text id="Lecteur" font-family="BrandonText-Bold, Brandon Text" font-size="45" font-weight="bold" fill="#110343">
+                    <tspan x="39" y="48">Lecteur</tspan>
+                </text>
+                <polygon id="Fill-139" fill="#6C547F" points="0 14 0 50 15.7707748 38.646795 30.5660377 50 30.5660377 14"></polygon>
+            </g>
+        </g>
+    </g>
+</svg>

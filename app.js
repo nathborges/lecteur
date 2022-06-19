@@ -17,6 +17,10 @@ app.get("/sign", (request, response) => {
     response.render("sign-up");
 });
 
+app.get("/login", (request, response) => {
+    response.render("login");
+});
+
 app.post("/", (req, res) => {
     var name = req.body.name;
     var email = req.body.email;

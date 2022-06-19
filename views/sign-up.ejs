@@ -1,14 +1,27 @@
 <%- include("header"); -%>
-    <div class="form-container">
-        <form class="form" action="/" method="post">
-            <label class="labelForm strong-text">What's your name?</label>
-            <input name="name" type="text">
-            <label class="labelForm strong-text">What's your e-mail?</label>
-            <input name="email" type="email">
-            <label class="labelForm strong-text">Your password</label>
-            <input name="password" type="password">
-            <label class="labelForm strong-text">Verify your password</label>
-            <input type="password">
-            <button class="btn home-text" type="submit">Sign up</button>
-        </form>
+<body class="body-sign-up" >
+    <div class="container">
+        <div class="form-container">
+            <form class="form" action="/" method="post">
+            <div class="each-form-container">
+                <label class="label-form regular-text">What's your name?</label>
+                <input class="input-form" name="name" type="text">
+            </div>
+            <div class="each-form-container">
+                <label class="label-form regular-text">What's your e-mail?</label>
+                <input class="input-form regular-text" name="email" type="email">
+            </div>
+            <div class="each-form-container">
+                <label class="label-form regular-text">Your password</label>
+                <input class="input-form regular-text" name="password" type="password">
+            </div>
+            <div class="each-form-container">
+                <label class="label-form regular-text">Verify your password</label>
+                <input class="input-form regular-text" type="password">
+            </div>
+                <button class="btn btn-sign-up home-text" type="submit">Sign up</button>
+                <p class="regular-text center-text">Already have an account? <a href="/login">Sign in</a></p>
+            </form>
+        </div>
     </div>
+</body>

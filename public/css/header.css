@@ -7,9 +7,6 @@
     src: url(/fonts/BrandonText-Regular.otf);
 }
 
-body {
-    background-color: #F4F4F4;
-}
 
 .logo-img {
     height: 40px;
@@ -21,13 +18,13 @@ body {
 }
 
 .strong-text {
-    color: #110343;
+    color: #21364F;
     font-size: 17px;
     font-family: BrandonText-Bold;
 }
 
 .regular-text {
-    color: #110343;
+    color: #21364F;
     font-size: 17px;
     font-family: BrandonText-Regular;
 }
@@ -43,7 +40,6 @@ body {
     justify-content: space-between;
     align-items: center;
     align-self: center;
-    background-color: #110343;
     margin-top: 9%;
 }
 
@@ -81,17 +77,59 @@ body {
     height: 400px;
 }
 
+/* sign-up page */
+
+.body-sign-up {
+    background-image: url(/images/bg-sign-up.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
 .form-container {
     align-self: center;
     justify-self: center;
     align-items: center;
     align-content: center;
-    padding: 0 30% 0 30%;
+    padding: 9% 32% 9% 32%;
 }
 
 .form {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    gap: 8px
+    gap: 10px;
 }
+
+.each-form-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.label-form {
+    font-size: 23px;
+}
+
+.input-form {
+    background: #FFFFFF;
+    border: 1px solid #979797;
+    border-radius: 12px;
+    height: 38px;
+    text-align: center;
+}
+
+.btn-sign-up {
+    align-self: center;
+}
+
+.center-text {
+    text-align: center;
+}
+
+/* login page */
+
+.body-login {
+    background-image: url(/images/bg-login.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
