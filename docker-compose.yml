@@ -1,0 +1,12 @@
+version: "3"
+
+services:
+  mongo-db:
+    image: "mongo:latest"
+    container_name: mongo-db
+    environment:
+      - MONGO_INITDB_ROOT_USER=su
+      - MONGO-INITDB_ROOT_PASSWORD=@mongo1213
+    ports:
+      - "27017:27017"
+    restart: always
