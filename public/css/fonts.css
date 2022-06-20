@@ -1,0 +1,20 @@
+@font-face {
+    font-family: BrandonText-Bold;
+    src: url(/fonts/BrandonText-Bold.otf);
+}
+@font-face {
+    font-family: BrandonText-Regular;
+    src: url(/fonts/BrandonText-Regular.otf);
+}
+
+.strong-text {
+    color: #21364F;
+    font-size: 17px;
+    font-family: BrandonText-Bold;
+}
+
+.regular-text {
+    color: #21364F;
+    font-size: 17px;
+    font-family: BrandonText-Regular;
+}
