@@ -5,7 +5,7 @@ services:
     build: "."
     container_name: lecteur
     ports:
-     - 4040:4040
+     - "4040:4040"
     restart: always
     links:
       - mongo

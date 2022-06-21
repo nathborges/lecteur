@@ -29,7 +29,7 @@ const BookSchema = new mongoose.Schema({
     },
     status: {
         type: String,
-        enum : ['TO READ','READING', 'READED'],
+        enum : ['TO READ','READING', 'READ'],
         default: 'TO READ',
         message: '{VALUE} is not supported',
     }
