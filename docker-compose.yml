@@ -1,14 +1,14 @@
 version: "3"
 
 services:
-  # lecteur:
-  #   build: "."
-  #   container_name: lecteur
-  #   ports:
-  #    - 4040:4040
-  #   restart: always
-  #   links:
-  #     - mongo
+  lecteur:
+    build: "."
+    container_name: lecteur
+    ports:
+     - 4040:4040
+    restart: always
+    links:
+      - mongo
 
   mongo:
     image: "mongo:latest"

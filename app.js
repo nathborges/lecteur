@@ -219,7 +219,7 @@ app.post("/changeBookStatus", (req, res) => {
   res.redirect(`/dashboard`);
 });
 
-app.post("/search", (req, res) => {
+app.post("/dashboard/search", (req, res) => {
   var search = req.body.search;
   var apiKey = "AIzaSyBkFPEGW4C4kUBoR8KVT73jg1Pro3s0WBw";
   var url = `https://www.googleapis.com/books/v1/volumes?q=${search}&key=${apiKey}`;

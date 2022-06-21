@@ -158,6 +158,15 @@ a {
   text-align: center;
   justify-self: center;
   color: #96AFB1 !important;
+  cursor: pointer;
+}
+
+.container-book-text-button a:hover {color: #114250 !important;}
+
+.container-book-text-button a:active {
+ color: #114250 !important;
+ text-shadow: 0 0.5px gray;
+ transform: translateY(4px);
 }
 
 .container-book-date {
