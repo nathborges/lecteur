@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Lecteur</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+      integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="/css/fonts.css" />
+    <link rel="stylesheet" href="/css/search.css" />
+  </head>
+  <body>
+    <div class="box">
+      <%- include("partials/side-menu"); -%>
+      <div id="content">
+        <div class="flex-inside-content">
+          <div class="search-container">
+            <h2 class="strong-text">Search books</h2>
+            <form class="form" action="/search" method="post">
+              <input
+                name="search"
+                type="text"
+                placeholder="To start, type a book's name and press enter"
+              />
+            </form>
+          </div>
+          <div class="book-results">
+            <% items.forEach((item) => { %>
+            <div class="container-book">
+              <img
+                id="img"
+                src="<%=item.volumeInfo.imageLinks.thumbnail%>"
+              />
+              <div class="container-book-text">
+                <div class="container-book-text-title">
+                  <h3 id="title" class="strong-text">
+                    <%=item.volumeInfo.title%>
+                  </h3>
+                  <p class="btn-add-to-your-library">Add to your library</p>
+                </div>
+                <h4 id="author" class="regular-text">
+                  <%=item.volumeInfo.authors%>
+                </h4>
+                <p class="regular-text"><%=item.volumeInfo.description%></p>
+              </div>
+            </div>
+            <% }) %>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      var buttons = document.getElementsByClassName("btn-add-to-your-library");
+
+      for (const button of buttons) {
+        button.addEventListener("click", (event) => {
+          var container = event.target.parentNode.parentNode.parentNode;
+          
+          const book = getBook(container);
+          request(book);
+        });
+      }
+
+      function getURL() {
+        const origin = new URL(window.location.origin);
+        return origin +  "insertABook";
+      }
+
+      function getBook(container) {
+        var title = container.querySelector("#title").innerText;
+        var author = container.querySelector("#author").innerText;
+        var image = container.querySelector("#img").getAttribute("src");
+
+        if (title === null || author === null) {
+          return;
+        }
+
+        const book = {
+          title: title,
+          author: author,
+          image: image,
+        };
+        return book;
+      }
+
+      async function request(book) {
+        try {
+          var url = getURL();
+          const answer = await fetch(url, {
+            method: "POST",
+            headers: {
+              Accept: "application/json",
+              "Content-Type": "application/json",
+            },
+            body: JSON.stringify(book),
+          });
+        } catch (e) {
+          console.error(ee);
+        }
+      }
+    </script>
+  </body>
+</html>

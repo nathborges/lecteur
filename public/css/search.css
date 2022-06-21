@@ -1,0 +1,148 @@
+.box {
+    display: flex;
+  }
+  
+  .wrapper {
+    flex: 0.5;
+    display: flex;
+    width: 100%;
+  }
+  
+  #sidebar {
+    flex: 10%;
+    width: 100px;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    z-index: 999;
+    background: #ffffff;
+  }
+  
+  .sidebar-header {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    height: 100vh;
+    gap: 20px;
+    align-items: center;
+  }
+  
+  .sidebar-icons {
+    height: 40px;
+  }
+  
+  .icon-sign-out {
+    margin-top: auto;
+  }
+
+#content {
+    flex: 90%;
+    height: 100vh;
+    background-color: #F4F4F4;
+}
+
+.flex-inside-content {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.search-container {
+    flex: 10%;
+    display: flex;
+    justify-content: space-between;
+    padding: 3%;
+    align-items: baseline;
+  }
+  
+  .search-container h2 {
+    margin-bottom: 0px;
+    font-size: 30px;
+    flex: 30%;
+  }
+  
+  .search-container form {
+    flex: 70%;
+  }
+  
+  .form input {
+    background-color: #ffffff;
+    border: 1px solid #fff;
+    border-radius: 12px;
+    height: 38px;
+    width: 400px;
+    text-align: center;
+    color: #21364f;
+  }
+
+.book-results {
+    flex: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 20px;
+    padding-right: 8%;
+    padding-left: 8%;
+    padding-bottom: 2%;
+    height: 100%;
+    overflow: scroll;
+}
+
+.container-book {
+    flex: 0.3;
+    border-radius: 21px;
+    background: #FFFFFF;
+    display: flex;
+    align-items: center;
+    padding-left: 4%;
+    padding-right: 4%;
+    gap: 5%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+
+.container-book img {
+    flex: 10%;
+    border-radius: 20px;
+    width: 200px; 
+    height: 100; 
+    object-fit: cover;
+}
+
+.container-book-text {
+    flex: 90%;
+    display: flex;
+    flex-direction: column;
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+
+.container-book-text-title {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-items: baseline;
+}
+
+.container-book-text-title h3 {
+   flex: 1;
+   margin: 0;
+}
+
+.container-book-text-title p {
+    flex: 1;
+    text-align: right;
+    color: #F56370;
+    cursor: pointer;
+    font-size: 17px;
+    font-family: BrandonText-Bold;
+    margin: 0;
+ }
+
+ .container-book-text-title p:hover {color: #114250}
+
+ .container-book-text-title p:active {
+  color: #114250;
+  text-shadow: 0 0.5px gray;
+  transform: translateY(4px);
+}

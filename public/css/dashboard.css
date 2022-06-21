@@ -1,125 +1,184 @@
-.teste {
-    display: flex;
+a {
+  align-self: center;
+}
+
+.box {
+  display: flex;
 }
 
 .wrapper {
-    flex: 0.5;
-    display: flex;
-    width: 100%;
+  flex: 0.5;
+  display: flex;
+  width: 100%;
 }
 
 #sidebar {
-    flex: 10%;
-    width: 100px;
-    top: 0;
-    left: 0;
-    height: 100vh;
-    z-index: 999;
-    background: #FFFFFF;
+  flex: 10%;
+  width: 100px;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  z-index: 999;
+  background: #ffffff;
 }
 
 .sidebar-header {
-    display: flex;
-    flex-direction: column;
-    padding: 20px;
-    height: 100vh;
-    gap: 20px;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  height: 100vh;
+  gap: 20px;
 }
 
 .sidebar-icons {
-    height: 40px;
+  height: 40px;
 }
 
 .icon-sign-out {
-    margin-top: auto;
+  margin-top: auto;
 }
 
 #content {
-    flex: 90%;
-    height: 100vh;
-    background-color: #F4F4F4;
+  flex: 90%;
+  height: 100vh;
+  background-color: #f4f4f4;
 }
 
-.flex-inside-content {
-    display: flex;
-    flex-direction: column;
-    height: 100vh;
+.flex-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
+  gap: 14px;
 }
 
-.search-bar {
-    flex: 10%;
-    display: flex;
-    justify-content: space-between;
-    padding: 3%;
+.search-container {
+  flex: 10%;
+  display: flex;
+  justify-content: space-between;
+  padding: 3%;
+  align-items: baseline;
 }
 
-.search-bar h2 {
-    font-size: 30px;
+.search-container h2 {
+  margin-bottom: 0px;
+  font-size: 30px;
+  flex: 30%;
+}
+
+.search-container form {
+  flex: 70%;
 }
 
 .form input {
-    background-color: #FFFFFF;
-    border: 1px solid #979797;
-    border-radius: 12px;
-    height: 38px;
-    text-align: center;
+  background-color: #ffffff;
+  border: 1px solid #fff;
+  border-radius: 12px;
+  height: 38px;
+  width: 400px;
+  text-align: center;
+  color: #21364f;
 }
 
-.book-results {
-    flex: 90%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    gap: 20px;
-    padding-right: 8%;
-    padding-left: 8%;
-    height: 100%;
-    overflow: scroll;
+.horizontal-container {
+  flex: 45%;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  width: 100%;
+  padding-right: 8%;
+  padding-left: 8%;
 }
 
-.container-book {
-    flex: 0.3;
-    border-radius: 21px;
-    background: #FFFFFF;
-    display: flex;
-    align-items: center;
-    padding-left: 4%;
-    padding-right: 4%;
-    gap: 5%;
+.flex-horizontal {
+  flex: 90%;
+  display: flex;
+  flex-direction: row;
+  gap: 6px;
+  height: 100%;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  width: 80vw;
 }
 
-.container-book img {
-    flex: 10%;
-    height: 70%;
-    max-height: 300px;
-    width: auto;
-    border-radius: 20px;
+.container-book-horizontal {
+  border-radius: 21px;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  gap: 1vw;
+  height: 150px;
+  width: 350px;
+  padding: 1%;
+  min-width: 350px;
+}
+
+.container-book-horizontal img {
+  flex: 10%;
+  height: 130px;
+  width: auto;
+  border-radius: 10px;
 }
 
 .container-book-text {
-    flex: 90%;
-    display: flex;
-    flex-direction: column;
+  height: 100%;
+  flex: 50%;
+  display: flex;
+  box-sizing: border-box;
+  flex-direction: column;
 }
 
-.container-book-text-title {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+.horizontal-container h2.strong-text {
+  font-size: 25px;
+  color: #4d4d4d;
 }
-
-.container-book-text-title h3 {
-   flex: 1
-}
-
-.container-book-text-title p{
-    flex: 1;
-    text-align: right;
-    color: #F56370;
-    font-size: 17px;
-    font-family: BrandonText-Bold;
- }
 
 .container-book-text h3 {
+  margin: 0;
+}
+.container-book-text p {
+  margin: 0;
+}
 
+.date-text {
+  font-size: 10px;
+  text-align: right;
+}
+
+.container-book-text-button {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.container-book-text-button a {
+  flex: 1;
+  font-size: 30px;
+  text-align: center;
+  justify-self: center;
+  color: #96AFB1 !important;
+}
+
+.container-book-date {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.rating {
+  flex: 1;
+  margin: 0;
+}
+
+.regular-text.rate {
+  color: #F56370;
+  text-align: center;
+}
+
+.regular-text.rate {
+  color: #F56370;
+  text-align: center;
 }

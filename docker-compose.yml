@@ -1,12 +1,19 @@
 version: "3"
 
 services:
-  mongo-db:
+  # lecteur:
+  #   build: "."
+  #   container_name: lecteur
+  #   ports:
+  #    - 4040:4040
+  #   restart: always
+  #   links:
+  #     - mongo
+
+  mongo:
     image: "mongo:latest"
-    container_name: mongo-db
-    environment:
-      - MONGO_INITDB_ROOT_USER=su
-      - MONGO-INITDB_ROOT_PASSWORD=@mongo1213
+    container_name: mongo
     ports:
       - "27017:27017"
-    restart: always
+
+

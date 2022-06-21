@@ -9,7 +9,11 @@ const BookSchema = new mongoose.Schema({
         type: String,
         require: true,
     },
-    evaluate: {
+    image: {
+        type: String,
+        require: true,
+    },
+    rate: {
         type: Number,
     },
     addedAt: {
@@ -20,14 +24,17 @@ const BookSchema = new mongoose.Schema({
     finishedAt: {
         type: Date
     },
+    startedAt: {
+        type: Date
+    },
     status: {
         type: String,
         enum : ['TO READ','READING', 'READED'],
         default: 'TO READ',
         message: '{VALUE} is not supported',
-    }}
+    }
+}
 );
-
 
 const Book = mongoose.model('Book', BookSchema);
 
